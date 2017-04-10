@@ -23,7 +23,7 @@ a{
 
 /*Estilo del logo*/
 .logo{
-	float: fixed;
+	float: right;
 }
 
 /*Estilos del encabezado*/
@@ -39,10 +39,12 @@ header{
 	overflow: auto;
 	font-size: 17px;
 	font-weight: bolder;
+	margin: 0px 80px;
 }
 
 .menu a{
 	margin: 0px 25px;
+	top: 50%;
 
 }
 
@@ -59,7 +61,7 @@ header{
 
 .container {
 	color: white;
-	padding: 30px;
+	padding: 5px;
 }
 
 .text-home {
