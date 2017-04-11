@@ -1,0 +1,243 @@
+/*Fuente*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*Estilos del cuerpo*/
+body {
+  font-family: 'Raleway', sans-serif; /*tipo de letra*/
+  margin: 0 auto; 
+  font-size: 16px;
+  line-height: 1.71429;
+  background-color: #fff;
+}
+
+/* Estilos de los links*/
+link{
+	font-weight: 700px;
+	padding: 21px;
+	display: inline-block;
+}
+ /*Eliando el subrayado de los links*/
+a{
+	text-decoration: none;
+}
+
+/*Estilo del logo*/
+.logo{
+	float: right;
+}
+
+/*Estilos del encabezado*/
+header{
+	position: fixed;
+	background: white;
+	width: 100%;
+	top: 0;
+}
+
+ /*encabezado estilo*/
+.menu{
+	padding: 14px 70px;
+	overflow: auto;
+	font-size: 17px;
+	font-weight: bolder;
+	margin: 0px 80px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.menu a{
+	margin: 0px 25px;
+	top: 20px;
+	position: relative;
+}
+
+/*Estilos del slider*/
+#home {
+	background-image: url(../img/bg-home.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 460px;
+	text-align: center;
+	margin-top: 88px;
+}
+
+.container {
+	color: white;
+	padding: 9px;
+}
+
+.text-home {
+	font-size: 53px;
+}
+
+/*Estilo del boton View Services*/
+.btn-home{
+	background: #2ECC71;
+	color: #fff;
+	padding: 11px 20px;
+	border-radius: 1px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-top: 63px;
+	display: inline-block;
+	font-size: 14px;
+}
+
+/*Estilos de Servicios*/
+#services {
+	background-color: #F17C72; /*Color de fondo*/
+	text-align: center; /*Alineación al centro*/
+	color: #fff; 
+	padding: 70px 7px;
+}
+
+.box-services {
+	display: inline-block;
+	width: 30%;
+	margin-top: 63px;
+}
+
+
+#services h5{
+	font-size: 16px;
+}
+
+#services h6{
+	font-size: 13px;
+	margin: 15px;
+}
+
+/*Estilos de Work*/
+
+#work{
+	text-align: center;
+}
+
+#compu{
+	width: 970px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	text-align: center;
+
+}
+
+#work li{
+  list-style: none;
+  display: inline-block;
+  margin: 30px 45px;
+  font-weight: bolder;
+}
+
+.contenedor-galeria{
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	margin: 0px;
+}
+
+.img-galeria{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+
+.nombre-img{
+	font-weight: bolder;
+}
+
+/*modal*/
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/*backgound*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content{    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/*Estilos del footer*/
+footer {
+	text-align: center;
+	height: 80px;
+	background: #373B47;
+	color: white;
+	padding-top: 7px;
+	margin-top: 35px;
+}
